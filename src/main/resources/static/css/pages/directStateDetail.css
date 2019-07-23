@@ -1,0 +1,121 @@
+.btn-update,.btn-setting{
+    background: none!important;
+    border-width: 0;
+    color: #777777!important;
+}
+.btn-update:hover,.btn-setting:hover,.btn-update:focus,.btn-setting:focus,.btn-update:active,.btn-setting:active,.btn-update:hover:active,.btn-setting:hover:active,.btn-update:focus:hover,.btn-setting:focus:hover{
+    background: none!important;
+}
+.errTag,.successTag{
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 4px;
+}
+.errTag{
+    background: #d9d9d9;
+    cursor: pointer;
+}
+.successTag{
+    background: #a9d08c;
+}
+.daterangepicker{
+    z-index: 1070;
+}
+.search_Condition_box{
+    margin-top: 64px;
+}
+.btn-update{
+    color: #7caa17!important;
+}
+.return_btn{
+    color: #7caa17 !important;
+    border-width: 0px!important;
+    background: none!important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.return_btn:hover{
+    color: #ffffff !important;
+    background: #7caa17!important;
+}
+.chartsBox{
+    background: white;
+    margin-bottom: 30px;
+    border: 1px solid #dcdfe6;
+    border-radius: 3px;
+}
+.barBox{
+    background: white;
+}
+.pageTitle{
+    font-size: 24px;
+    line-height: 64px;
+    padding-left: 25px;
+}
+.chartsBox .chartsTitle{
+    height: 47px;
+    line-height: 47px;
+    /* border-bottom: 1px dashed #d6d6d6; */
+    font-size: 16px;
+    /* font-weight: bold; */
+    color: #5f5f5f;
+    padding-left: 10px;
+    position: relative;
+}
+.innerBox{
+    position: relative;
+}
+.goDetail{
+    position: absolute;
+    right: 10px;
+    /*bottom: 10px;*/
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing:1px;
+    cursor: pointer;
+    padding-left: 10px;
+    color: #7caa17;
+}
+.chartsItem{
+    height: 300px;
+    width: 100%;
+}
+#chooseRange{
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    padding: 0 20px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+#rangeChooseBox{
+    position: fixed;
+    z-index: 101;
+    background: white;
+    width: 300px;
+    border-radius: 4px;
+    display: none;
+    bottom: 280px;
+    padding: 15px;
+    left: 345px;
+    box-shadow: -2px 1px 18px rgba(4, 0, 0, 0.07);
+    border: 1px solid #ececec;
+}
+
+/*红绿灯弹出框用*/
+.greenC,.redC{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.redC{
+    background: #97928e99;
+}
+.greenC{
+    background: #8dc314;
+}

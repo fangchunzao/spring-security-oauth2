@@ -1,0 +1,43 @@
+.table_box{
+    padding: 0 0 20px;
+}
+#modle_table{
+    width: 94%;
+    margin: 0 1% 0 5%;
+}
+#modle_table thead{
+    background-color: #EFF3F8;
+    line-height: 35px;
+    font-weight: 700;
+    color: #777;
+    text-shadow: none;
+}
+#modle_table thead th{
+    text-align: center;
+    height: 27px;
+    padding: 0 2px;
+    border-bottom: 1px;
+}
+#modle_table thead th:first-child{
+    width: 100px;
+}
+#modle_table tbody{
+    text-align: center;
+    color: #777;
+}
+#modle_table tbody td input{
+    text-align: center;
+    border: none;
+}
+#modle_table .chosen-container-single .chosen-single{
+    border: none;
+}
+#convertChoose_chosen{
+    border: 0;
+    width: 50%!important;
+    float: left;
+}
+#modle_table tbody td #correctSaleNum_match{
+    border-radius: 0!important;
+    border-left: 1px solid #d9d9d9;
+}

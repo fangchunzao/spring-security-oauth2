@@ -1,0 +1,138 @@
+body{
+    background: url("../../images/ddi/qiluLoginBK.jpg") center center no-repeat!important;
+    background-size: cover!important;
+    font-family: Arial, “Microsoft YaHei”, “微软雅黑”, sans-serif;
+    min-height: 800px;
+}
+.main-container{
+    /*background: url("../../images/ddi/qiluLoginBK.jpg") center center;*/
+    /*background-size: cover;*/
+    height: 89%;
+    /*min-height: 650px;*/
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top:11%;
+}
+.main-content>.row{
+    position: absolute;
+    height: 100%;
+}
+.main-content>.row>div,.login-container,.login-container .position-relative{
+    height: inherit;
+}
+.login-container{
+    width: 390px;
+}
+.login_title,.login_foot{
+    color: #fff;
+    background: rgba(27,34,49,.2);
+}
+.login_foot{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.login_foot #allName{
+    position: absolute;
+    right: 16px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 800;
+    line-height: 30px;
+    bottom: 10px;
+}
+.login_title{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: absolute;
+    width: 100%;
+    height: 11%;
+}
+.login_title .lgT-left,.login_title .lgT-right{
+    display: inline-block;
+}
+.login_title .lgT-right{
+    padding-left: 15px;
+}
+.login_title .big_title{
+    font-size: 26px;
+    /*padding-left: 36px;*/
+    letter-spacing: 7.5px;
+}
+#DTQ_logo{
+    background: url("../../images/ddi/DTQ_logo.png") top center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.login_title .small_title{
+    /*padding-left: 38px;*/
+    letter-spacing: 6px;
+    color: #72bdea;
+    font-weight: 800;
+    font-size: 12px;
+}
+.white_logo{
+    background: url("../../images/ddi/qilu_white.png") top center;
+    /*background: url("../../images/ddi/qilu_blue.png") top center;*/
+    background-size: cover;
+    width: 280px;
+    height: 54px;
+    margin-left: 25px;
+    /* margin-top: -3px; */
+}
+.login-layout .widget-box .widget-main{
+    background: none;
+}
+.widget-body{
+    background-color: rgba(255,255,255,.6);
+    height: 100%;
+}
+.login-layout .widget-box{
+    background: none;
+}
+.qilu_title_cn,.qilu_title_en{
+    text-align: center;
+    color: #0a042c;
+    font-weight: 800;
+}
+.qilu_title_cn{
+    font-size: 23px;
+    color: #1e82be;
+    letter-spacing: 7px;
+    padding-top: 25px;
+}
+.qilu_title_en{
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+#login-box{
+    height: inherit;
+}
+#loginForm{
+    padding: 15px 0;
+}
+#loginForm label{
+    font-size: 15px;
+    margin-bottom:6px ;
+    color: #636363;
+}
+#loginForm input{
+    border-radius: 6px 6px 6px 6px!important;
+    border: 2px solid #9E9E9E;
+    height: 40px;
+}
+#loginForm .btn-primary{
+    background-color: #cc4d64!important;
+    border-color: #cc4d64;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 800;
+    margin-top: 15px;
+}

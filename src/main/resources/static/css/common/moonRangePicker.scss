@@ -1,0 +1,121 @@
+$--color-primary: #108ee9 !default; // build
+$--color-white: #fff !default;
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default;
+.moonrangepicker {
+  position: absolute;
+  background: #fff;
+  top: 100px;
+  left: 20px;
+  padding: 4px;
+  margin-top: 1px;
+  border-radius: 4px;
+  width: 500px;
+  height: auto;
+  //display: block;
+  .calendar.left, .calendar.right {
+    clear: none;
+    width: 46%;
+    display: inline-block;
+    margin: 0 2%;
+    .header {
+      .hdBtn {
+        display: inline-block;
+        padding: 0 13px;
+        cursor: pointer;
+        &:hover {
+          background: #ececec;
+          border-radius: 3px;
+        }
+      }
+      .yearBox {
+        display: inline-block;
+        text-align: center;
+        width: 83.5%;
+        font-weight: 600;
+        cursor: default;
+        user-select: none;
+      }
+    }
+    .cbody {
+      .moonBox {
+        display: inline-block;
+        width: 23%;
+        height: 50px;
+        line-height: 54px;
+        float: left;
+        margin: 1%;
+        cursor: pointer;
+        text-align: center;
+        user-select: none;
+        span {
+          pointer-events: none;
+        }
+      }
+      .moonBox:hover {
+        background: $--color-primary;
+        color: #fff;
+      }
+      .focused {
+        background: #e6f0ff;
+        color: #fff;
+      }
+      .in-range {
+        background: $--color-primary-light-7;
+        color: #fff;
+      }
+      .active {
+        background: $--color-primary;
+        color: #fff;
+      }
+      .disable {
+        color: #E0E0E0;
+        background: #f7f7f7;
+      }
+      .disable:hover {
+        color: #E0E0E0;
+        background: #f7f7f7;
+      }
+    }
+  }
+  .clearBtn {
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 6px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    user-select: none;
+  }
+  .clearBtn:hover {
+    background: $--color-primary;
+    color: #fff;
+  }
+}
+
+.moonrangepicker-dropdown {
+  padding: 8px;
+  z-index: 11000;
+}
+
+.moonrangepicker-dropdown:before {
+  position: absolute;
+  top: -7px;
+  left: 9px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #ccc;
+  border-left: 7px solid transparent;
+  border-bottom-color: rgba(0, 0, 0, .2);
+  content: '';
+}
+
+.moonrangepicker-dropdown:after {
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  display: inline-block;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid transparent;
+  content: '';
+}

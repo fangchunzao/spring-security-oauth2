@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/common/common.js"></script>
+    <script src="/js/plug/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+this is test page
+<a href="/">退出</a>
+
+<form id="footerForm">
+    <input type="hidden" id="token" name="token" value='${token}'>
+    <label id="buttonA" onclick="request('/api/test/test01');">SFE & 商务 - SFE TEST</label>
+    <br>
+    <label id="buttonA-1" onclick="request('/api/test/test02');">SFE & 商务 - 商务 Test</label>
+    <br>
+    <label id="buttonA-2" onclick="request('/api/test/test03');">SFE & 商务 - common Test</label>
+    <br>
+    <label id="buttonB" onclick="requestB();">销售权限测试</label>
+    <label id="buttonC" onclick="requestC();">商务权限测试</label>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label id="save_user_button" onclick="request('/api/redis/saveUserKey');">保存用户Redis</label>
+    <br>
+    <label id="get_user_button" onclick="request('/api/redis/getUserKey');">获取用户Redis</label>
+    <br>
+    <br>
+    <br>
+    <br>
+    <label id="message_queue_button" onclick="request('/api/redis/messageQueuePushTest');">发送消息</label>
+    <label onclick="request('/api/redis/messageQueueSubTest');">获取消息</label>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <label id="show"></label>
+</form>
+<script>
+    window.localStorage.setItem("token", '${token}');
+    function request(url) {
+        tAjax(url,"","get").success(function (res) {
+            $("#show").text(JSON.stringify(res));
+        });
+    }
+    function requestB() {
+        tAjax("/api/sale/test01","","get").success(function (res) {
+            $("#show").text(JSON.stringify(res));
+        });
+    }
+    function requestC() {
+        tAjax("/api/bus/test01","","get").success(function (res) {
+            $("#show").text(JSON.stringify(res));
+        });
+    }
+</script>
+</body>
+</html>

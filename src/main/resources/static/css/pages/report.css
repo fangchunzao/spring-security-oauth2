@@ -1,0 +1,547 @@
+.widget-header {
+    background: #f7f7f7;
+    border-color: #e7e7e7;
+}
+
+.widget-header span {
+    background: #fbc67c;
+    color: #fff;
+    display: inline-block;
+    padding: 4px 11px;
+    font-size: 15px;
+    margin-top: 4px;
+    margin-right: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.widget-header span i {
+    font-size: 20px;
+}
+
+.widget-box {
+    background: #e7e7e7;
+    border-color: #e7e7e7;
+}
+
+.widget-color-blue2 {
+    border-color: #d5e3ef;
+    box-shadow: 0px 1px 4px #d5e3ef;
+}
+
+.widget-color-blue2 > .widget-header {
+    background: #fff;
+    border-color: #d5e3ef;
+}
+
+.widget-box[class*=widget-color-] > .widget-header {
+    color: #6fb3e0;
+}
+
+.dataTable > thead > tr > th.sorting_asc, .dataTable > thead > tr > th.sorting_desc {
+    background: #dce9f1;
+}
+
+.dataTable > thead > tr > th[class*=sorting_], .dataTable > thead > tr > th.sorting_asc:after {
+    color: #49acf8;
+}
+
+.table > thead > tr {
+    background-image: none;
+}
+
+.table.table-bordered > thead > tr > th {
+    text-align: center;
+}
+
+.dataTable > thead > tr > .sorting_disabled {
+    color: #307ECC !important;
+}
+
+#chartsTableUp td, #chartsTableDown td {
+    text-align: center
+}
+
+#chartsTableUp td:last-child, #chartsTableDown td:last-child {
+    text-align: right
+}
+
+#chartsTable_paginate a, #chartsTableUp_paginate a, #chartsTableDown_paginate a {
+    text-decoration: none;
+}
+
+#chartsTableUp, #chartsTableDown {
+    table-layout: fixed
+}
+
+#chartsTableDown th:first-child, #chartsTableUp th:first-child {
+    width: 50px
+}
+
+/*#chartsTableUp td:first-child,#chartsTableUp th:first-child,#chartsTableDown td:first-child,#chartsTableDown th:first-child{width: 50px;}*/
+#chartsTable_paginate .paginate_button, #chartsTableUp_paginate .paginate_button, #chartsTableDown_paginate .paginate_button {
+    padding: 4px 10px;
+    border: 1px solid #d4dfe3;
+    color: #49acf8;
+    line-height: 28px;
+    margin-right: 2px;
+}
+
+#chartsTable_paginate span .current, #chartsTableUp_paginate span .current, #chartsTableDown_paginate span .current {
+    color: #fff;
+    background: #49acf8;
+    border-color: #49acf8;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    background: none !important;
+}
+
+.chosen-container-multi .chosen-choices {
+    background-image: none !important;
+    border: 1px solid #ececec !important;
+    padding: 0 !important;
+}
+
+.select2-container-multi.tag-input-style .select2-choices .select2-search-choice, .select2.tag-input-style .select2-selection .select2-selection__choice, .tag-input-style + .chosen-container-multi .chosen-choices li.search-choice {
+    text-shadow: none;
+}
+
+.tag-input-style + .chosen-container-multi .chosen-choices li.search-choice {
+    background-color: #49acf8;
+}
+
+.chosen-container {
+    line-height: 30px;
+    min-width: 150px;
+    width: 30px !important;
+}
+
+.searchCondition_box {
+    overflow: hidden;
+}
+
+.searchCondition_box .input-group {
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.span_radio_choose {
+    color: #78b9e8;
+    line-height: 24px;
+    box-sizing: content-box;
+    vertical-align: middle;
+}
+
+.span_radio_choose span {
+    padding: 3px 12px;
+    border-left: 1px solid #d5e3ef;
+    font-size: 12px;
+    border-top: 1px solid #d5e3ef;
+    border-bottom: 1px solid #d5e3ef;
+    display: inline-block;
+    min-width: 75px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.span_radio_choose span:last-child {
+    border-right: 1px solid #d5e3ef;
+    border-radius: 0 4px 4px 0;
+}
+
+.span_radio_choose span:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.span_radio_choose .span_active {
+    background: #49acf8;
+    color: #fff;
+}
+
+.span_radio_choose .disabled_choose {
+    background: #e7e7e7;
+    color: #fff;
+    border-color: #e7e7e7;
+    cursor: not-allowed;
+}
+
+.select_box {
+    display: inline-block;
+    max-width: 70%;
+}
+
+.radio_choose {
+    display: none;
+    max-width: 100%;
+}
+
+.radio_choose:first-child {
+    display: inline-block;
+}
+
+.radio_choose select {
+    max-width: 100%;
+}
+
+.time_year, .time_quarter, .time_moon {
+    display: inline-block;
+}
+
+.time_quarter {
+    display: none;
+}
+
+.report_tab_box .tab_title_box .active, .report_tab_box .tab_title_box .active i {
+    color: #fff;
+}
+
+.report_tab_box .tab_title_box span {
+    display: inline-block;
+    width: 50%;
+    background: #e7e7e7;
+    color: #fff;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.report_tab_box .tab_title_box .active, .report_tab_box .tab_title_box .active i {
+    color: #fff;
+}
+
+.report_tab_box .tab_title_box .active:first-child {
+    background: #49acf8;
+}
+
+.report_tab_box .tab_title_box .active:last-child {
+    background: #fbc67c;
+}
+
+.report_tab_box {
+    position: relative;
+}
+
+.report_tab_box .tab_title_box {
+
+}
+
+.report_tab_box .table_box {
+    width: 100%;
+    overflow-x: auto;
+    border-left: 1px solid #ececec;
+}
+
+.report_tab_box .table_box th {
+    /*min-width: 115px;*/
+    text-align: right;
+}
+
+.report_tab_box .table_box td {
+    text-align: right;
+}
+
+.report_tab_box .table_box td:first-child {
+    text-align: left;
+}
+
+.report_tab_box .table_box .dataTables_wrapper {
+    padding-bottom: 5px;
+}
+
+.report_tab_box .tab_box .report_tab {
+    overflow: hidden;
+    position: relative;
+}
+
+.report_tab_box .tab_box .report_tab #chart-panel {
+    height: 470px;
+    max-width: 100%;
+}
+
+.tree_box {
+    border: 1px solid #e9e9e9;
+    margin-bottom: 10px;
+}
+
+.tree_box > label {
+    width: 100%;
+    border-bottom: 1px dashed #e9e9e9;
+    padding: 5px 10px;
+}
+
+.tree_box .width100_box {
+    max-height: 250px;
+    overflow: auto;
+}
+
+#chart-panel1, #chart-panel2, #chart-panel3 {
+    height: 500px;
+}
+
+#averageMonthNumBox {
+    display: none;
+}
+
+.p1 .input-group > span, .p5 .input-group > span, .p6 .input-group > span, .p7 .input-group > span, .p8 .input-group > span {
+    min-width: 85px;
+    text-align: right;
+    display: inline-block;
+}
+
+.p2 .input-group > span, .p3 .input-group > span, .p4 .input-group > span {
+    min-width: 75px;
+    text-align: right;
+    display: inline-block;
+}
+
+body {
+    min-width: 1410px;
+    background: #fff;
+}
+
+.ov_box {
+    overflow-x: auto;
+    margin-right: 1%;
+    padding: 0;
+    width: 49%;
+}
+
+.help_mes_box {
+    padding: 20px;
+}
+
+#dataType span {
+    line-height: 25px;
+    text-align: center;
+    padding: 3px 12px;
+    border: 1px solid #d5e3ef;
+    font-size: 12px;
+    display: inline-block;
+    min-width: 75px;
+    border-right: 0px;
+}
+
+#dataType span:last-child {
+    border-right: 1px solid #d5e3ef;
+    border-radius: 0 3px 3px 0;
+}
+
+#dataType span:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+#dataType span.span_active {
+    background: #49acf8;
+    color: #fff;
+    border-color: #49acf8;
+}
+
+#dataType .disabled_choose {
+    background: #e7e7e7;
+    color: #fff;
+    border-color: #e7e7e7;
+    cursor: not-allowed;
+}
+
+/*新增radio组text样式，提至顶端*/
+.span_radioGroup_text {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#grid-table .break {
+    width: 1px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 6px;
+    position: relative;
+}
+
+#grid-table .break:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 34px;
+    background: #ddd;
+    transform: rotate(30deg);
+    position: absolute;
+    top: -13px;
+}
+
+/*top80*/
+#topTag {
+    display: inline-block;
+    /*background: #f3d0b2;*/
+    position: relative;
+    width: 100%;
+}
+
+#topTag:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    /*background: #ff00002e;*/
+    background: #f9b67d47;
+    z-index: 0;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+#warringTag {
+    display: inline-block;
+    /*background: #f3d0b2;*/
+    position: relative;
+    width: 100%;
+}
+
+#warringTag:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    /*background: #ff00002e;*/
+    background: #cddc398a;
+    z-index: 0;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+/*.ui-jqgrid tr.ui-row-ltr td, .ui-jqgrid tr.ui-row-rtl td{*/
+/*position: relative;*/
+/*}*/
+.frozen-bdiv {
+    background: #fff;
+    /*height: 450px !important;*/
+    border-right: 1px solid #D3D3D3 !important;
+}
+
+.report_tab .ui-jqgrid .ui-jqgrid-view, .report_tab .ui-jqgrid {
+    position: static;
+}
+
+.ui-jqgrid tr.ui-row-ltr td, .ui-jqgrid tr.ui-row-rtl td {
+    height: 35px;
+}
+
+.new_select {
+    width: 140px;
+}
+#chartTitle{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    color: #757575;
+    padding-top: 10px;
+}
+#comTitle, #comTitle_Table {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 50px;
+    position: relative;
+    color: #757575;
+}
+
+#comTitle:before, #comTitle_Table:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 13px;
+    left: 29px;
+    width: 5px;
+    height: 17px;
+    background: #49acf8;
+}
+#chart-tips{
+    color: #aaaaaa;
+    font-size: 14px;
+    text-align: right;
+    padding: 0 15px 10px;
+}
+#tips_box{
+    padding: 10px;
+    color: #aaaaaa;
+    border: 1px solid #d5e2ef;
+    margin-top: 10px;
+}
+#chartsBox {
+    height: 540px;
+    overflow-y: auto;
+    background: #f2f2f2;
+}
+
+input[type=checkbox].ace.ace-switch.ace-switch-5 + .lbl::before {
+    content: "是\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0\a0否";
+}
+
+.switchLable {
+    padding: 0 5px;
+    border-right: 2px solid #49acf8;
+}
+
+.switchLable:first-child {
+    border-right: none;
+}
+
+#toImage {
+    background: #f2f2f2;
+}
+.chosen-container{
+    background: #fff;
+}
+/*多选树*/
+.tcOutBox{
+    display: none;
+    position: relative;
+}
+.tcBox{
+    position: absolute;
+    background: #fff;
+    z-index: 10000000;
+    border: 1px solid #d5d5d5;
+    top: -455px;
+    left: 85px;
+    max-height: 420px;
+    overflow: auto;
+    width: 700px;
+    min-height: 380px;
+    box-shadow: 0px 0px 20px 1px #ccc9c9;
+}
+input[readonly]{
+    max-width: 148px;
+    background: #fff!important;
+}
+.duallistbox{
+    padding: 25px 20px;
+}
+.tcBox .chosen-container{
+    width: 100%!important;
+}
+.tcBox .allTextBlock , #chooseMoreDealerModal .allTextBlock{
+    display: none;
+}
+.tcBox .allTextBlock label,#chooseMoreDealerModal .allTextBlock label{
+    padding: 5px 10px;
+    background: #49acf8;
+    color: #fff;
+}
+#hasChooseDealerList li{
+    list-style-type: none;
+    float: left;
+    background: #4fb8ec;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 5px;
+    cursor: default;
+    margin-bottom: 5px;
+    padding: 5px;
+}

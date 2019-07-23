@@ -1,0 +1,113 @@
+.setting_box ul {
+    margin: 0 0 15px;
+}
+
+.setting_box .title {
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+    padding: 4px 10px 10px;
+    font-size: 16px;
+    color: #2697ec;
+}
+
+.setting_box li {
+    list-style-type: none;
+    cursor: pointer;
+    width: 50%;
+    padding: 2px 10px;
+    border-bottom: 1px dashed #ececec;
+    height: 30px;
+    color: #7b7b7b;
+    display: inline-block;
+    position: relative;
+}
+
+.setting_box .isSetting {
+    border: 1px solid #2cb1ff;
+    border-radius: 3px;
+    color: #0286d4;
+    box-shadow: 0 0 1px 0;
+}
+
+.setting_box li span, .setting_box li label {
+    cursor: pointer;
+    margin: 0;
+}
+
+.setting_box li .key {
+    display: inline-block;
+    width: 160px;
+    text-align: right;
+}
+.setting_box li .key .settingText{
+    color: #7b7b7b;
+}
+
+.setting_box li .tipMes {
+    color: #999;
+}
+.setting_box [isrequired='1']:before{
+    content: '*';
+    display: block;
+    color: red;
+    vertical-align: middle;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+}
+#setting_btn label,#setting_btn span{pointer-events: none;}
+#grid-step1_table td{cursor: pointer}
+#setting_btn li .value span{color: #118ee9;}
+#step2Main .chosen-container {
+    min-width: 100%;
+}
+.ui-tabs{padding: 0}
+.ui-tabs .ui-tabs-nav{
+    border-bottom:none;
+    padding: 0;
+}
+.ui-tabs .ui-tabs-panel{
+    border: none;
+    padding: 0;
+}
+.search_Condition_box:first-child{
+    margin-top: 0;
+}
+/*#selectDealerBox{*/
+    /*display: none;*/
+/*}*/
+.steps>li{
+    pointer-events: none;
+}
+#chart-panel{height: 300px;}
+#chartsShow {
+    text-align: center;
+}
+#chartsShow label{
+    color: #78b9e8;
+    line-height: 24px;
+    box-sizing: content-box;
+    vertical-align: middle;
+}
+#chartsShow span{
+    padding: 3px 12px;
+    border-left: 1px solid #d5e3ef;
+    font-size: 12px;
+    border-top: 1px solid #d5e3ef;
+    border-bottom: 1px solid #d5e3ef;
+}
+#chartsShow span:last-child{
+    border-right: 1px solid #d5e3ef;
+    border-radius: 0 4px 4px 0;
+}
+#chartsShow span:first-child{
+    border-radius: 4px 0 0 4px;
+}
+#chartsShow .active_span{
+    background: #49acf8;
+    color: #fff;
+}
+#my-modal .wizard-actions .btn-prev:not([disabled]){
+    background-color: #9ecce8!important;
+    border-color: #9ecce8;
+}

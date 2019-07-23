@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>BLN SYSTEM</title>
+    <link rel="shortcut icon" href="/images/ddi/favicon.ico"/>
+    <meta name="description" content="User login page"/>
+    <script src="/js/plug/jquery-2.1.4.min.js"></script>
+
+</head>
+
+<form id="loginForm" action="/login" method="post">
+    <fieldset>
+        <div class="form-group">
+            <strong>用户名</strong>
+            <input type="text" name="username" class="form-control" id="edc_username" placeholder="用户名"/>
+        </div>
+        <div class="form-group">
+            <strong>密码</strong>
+            <input type="password" name="password" class="form-control" id="edc_password" placeholder="密码"/>
+        </div>
+        <div class="clearfix">
+            <button type="submit" id="loginButton" >
+              登   录
+            </button>
+        </div>
+        <div class="space-4"></div>
+    </fieldset>
+</form>
+
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+    // 登陆提交检查
+    $(document).ready(function () {
+        $('#loginForm').submit(function () {
+            var inputCheckFlg = true;
+            if (!$("#edc_username").val()) {
+                layer.tips('请输入用户名', '#edc_username', {tipsMore: true});
+                inputCheckFlg = false;
+            }
+            if (!$("#edc_password").val()) {
+                layer.tips('请输入密码', '#edc_password', {tipsMore: true});
+
+                inputCheckFlg = false;
+            }
+            return inputCheckFlg;
+        });
+    });
+    var code = '${code!}';
+
+</script>
+</body>
+</html>

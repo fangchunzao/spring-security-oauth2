@@ -1,0 +1,53 @@
+.qaSearchBox {
+    padding: 20px;
+    position: relative;
+}
+.qaSearchBox .title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 1;
+}
+.qaSearchBox .nav {
+    width: 150px;
+    background: #F9F9F9;
+    border-left: 1px solid #C5D0DC;
+    border-top: 1px solid #C5D0DC;
+    /*overflow: hidden;*/
+    /*overflow-y: auto;*/
+}
+.qaSearchBox .nav.nav-tabs>li {
+    margin-left: -1px;
+}
+.qaSearchBox .nav.nav-tabs>li:first-child {
+    margin-top: 90px;
+}
+.qaSearchBox .tab-content {
+    padding: 0;
+    /*background: green;*/
+}
+.qaSearchBox .tab-content .form-horizontal {
+    margin: 20px 20px 0;
+}
+.qaSearchBox .tab-content .tab-pane {
+    margin: 0 20px;
+}
+.qaSearchBox .tab-pane ol {
+    list-style-type:none;
+    padding: 0;
+    margin: 30px 0 40px 20px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.qaSearchBox .tab-pane ol a {
+    color: inherit;
+    cursor: pointer;
+}
+
+.qaSearchBox .pagination>li>span {
+    margin-right: -1px;
+    margin-left: 0;
+}
