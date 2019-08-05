@@ -57,10 +57,7 @@ public class AuthenticationSuccessHandler extends SavedRequestAwareAuthenticatio
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
                                         Authentication authentication) throws IOException {
-
-
         ClientDetails clientDetails = clientDetailsService.loadClientByClientId(clientId);
-
 
         if (clientDetails == null) {
             throw new UnapprovedClientAuthenticationException("clientId 对应的客户端不存在:" + clientId);
